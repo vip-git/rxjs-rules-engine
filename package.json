@@ -1,0 +1,30 @@
+{
+  "name": "rxjs-rules-engine",
+  "version": "1.0.0",
+  "description": "Rules engine using RXJS - currently tailored for react with hooks - more examples to follow.",
+  "main": "./dist/index.js",
+  "scripts": {
+    "test": "npm test",
+    "generate:types": "tsc ./src/index.ts --declaration --emitDeclarationOnly --jsx react --lib es2015 --esModuleInterop --outDir dist",
+    "build": "tsc ./src/index.ts --declaration --lib es2015 --esModuleInterop --jsx react  --outDir dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vip-git/rxjs-rules-engine.git"
+  },
+  "author": "Vipin Tanna",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vip-git/rxjs-rules-engine/issues"
+  },
+  "homepage": "https://github.com/vip-git/rxjs-rules-engine#readme",
+  "dependencies": {
+    "observable-hooks": "2.1.3",
+    "rxjs": "6.5.4"
+  },
+  "devDependencies": {
+    "@types/react": "16.9.17",
+    "@types/react-dom": "16.9.4",
+    "typescript": "3.7.4"
+  }
+}
