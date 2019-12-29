@@ -6,7 +6,8 @@
   "scripts": {
     "test": "npm test",
     "generate:types": "tsc ./src/index.ts --declaration --emitDeclarationOnly --jsx react --lib es2015 --esModuleInterop --outDir dist",
-    "build": "tsc ./src/index.ts --declaration --lib es2015 --esModuleInterop --jsx react  --outDir dist"
+    "build": "tsc ./src/index.ts --declaration --lib es2015 --esModuleInterop --jsx react  --outDir dist",
+    "release": "npm run build && npm version patch && npm publish"
   },
   "repository": {
     "type": "git",
